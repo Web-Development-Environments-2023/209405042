@@ -281,7 +281,8 @@ My Code
 <br/>
 צור קשר
 <br/>
-  <form onsubmit="sendEmail();">
+<form action="https://formsubmit.co/sitri@post.bgu.ac.il" method="POST">
+    <input type="hidden" name="_captcha" value="false">
     <input type="text" id="name" class="input-field" placeholder="שם">
     <input type="email" id="email" class="input-field" placeholder="אימייל">
     <textarea type="text" id="content" class="input-field" placeholder="תוכן"></textarea>
@@ -291,22 +292,7 @@ My Code
 <br/>
 </section>
 
-<script src="https://smtpjs.com/v3/smtp.js"></script>
-<script>
-  function sendEmail(){
-    Email.send({
-      Host: "smtp.gmail.com",
-      Username: "aliza.memosite@gmail.com",
-      Password: "aaabbb123!",
-      To: "sitri@post.bgu.ac.il",
-      From: getElementById("email").value,
-      Subject: "התקבלה הודעה חדשה מאתר הזיכרון לעליזה סתרי",
-      Body: "שם: " + getElementById("name").value + 
-      "<br> תוכן: " + getElementById("content").value 
-    }).then
-    (message => alert("הודעה נשלחה בהצלחה"));
-  }
-</script>
+=
 <script type="text/javascript">
 $(function(){
   $("#nav a").click(function(e){
