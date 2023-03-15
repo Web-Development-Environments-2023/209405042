@@ -6,15 +6,22 @@
   <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body dir="rtl">
-<div id="menu">
-<li><a href="#about">אודות</a></li>
-<li><a href="#photos">תמונות</a></li>
-<li><a href="#playlist">פלייליסט</a></li>
-<li><a href="#like">לייקים</a></li>
-<li><a href="#qrcoder">QR code</a></li>
-<li><a href="#spa">Q&A</a></li>
-<li><a href="#contact">צור קשר</a></li>
-</div>
+
+  <div id="menu">
+  <li><a href="#about">אודות</a></li>
+  <li><a href="#photos">תמונות</a></li>
+  <li><a href="#playlist">פלייליסט</a></li>
+  <li><a href="#like">לייקים</a></li>
+  <li><a href="#qrcoder">QR Code</a></li>
+  <li><a href="#spa">Q&A</a></li>
+  <li><a href="#contact">צור קשר</a></li>
+  </div>
+
+<section id="header" class="section">
+  <p>
+    ברוכים הבאים לאתר הזיכרון לעליזה סתרי ז"ל
+  </p>
+</section>
 		  
 <section id="about" class="section">
 <br/>
@@ -272,28 +279,34 @@ My Code
 
 <section id="contact" class="section">
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
 צור קשר
 <br/>
+  <form onsubmit="sendEmail();">
+    <input type="text" id="name" class="input-field" placeholder="שם">
+    <input type="email" id="email" class="input-field" placeholder="אימייל">
+    <textarea type="text" id="content" class="input-field" placeholder="תוכן"></textarea>
+    <button type="submit" class="btn">שלח</button>
+  </form>
 <br/>
 <br/>
 </section>
 
-
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+  function sendEmail(){
+    Email.send({
+      Host: "smtp.gmail.com",
+      Username: "aliza.memosite@gmail.com",
+      Password: "aaabbb123!",
+      To: "sitri@post.bgu.ac.il",
+      From: getElementById("email").value,
+      Subject: "התקבלה הודעה חדשה מאתר הזיכרון לעליזה סתרי",
+      Body: "שם: " + getElementById("name").value + 
+      "<br> תוכן: " + getElementById("content").value 
+    }).then
+    (message => alert("הודעה נשלחה בהצלחה"));
+  }
+</script>
 <script type="text/javascript">
 $(function(){
   $("#nav a").click(function(e){
