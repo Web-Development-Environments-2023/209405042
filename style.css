@@ -5,3 +5,9 @@
 	height: 35px;
 	background: rgb(238, 183, 183);
 }
+
+emoji-picker {
+	--num-columns: 6;
+	--emoji-size: 14px;
+	--border-color: black;
+  }
