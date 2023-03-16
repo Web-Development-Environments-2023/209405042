@@ -5,45 +5,44 @@
   <title>אתר זיכרון לעליזה סתרי ז"ל</title>
   <link rel="stylesheet" type="text/css" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.css" integrity="sha512-0Nyh7Nf4sn+T48aTb6VFkhJe0FzzcOlqqZMahy/rhZ8Ii5Q9ZXG/1CbunUuEbfgxqsQfWXjnErKZosDSHVKQhQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alef&display=swap" rel="stylesheet">
 
 </head>
 <body dir="rtl">
 
   <div id="menu">
-  <li><a href="#about">אודות</a></li>
-  <li><a href="#photos">תמונות</a></li>
-  <li><a href="#playlist">פלייליסט</a></li>
-  <li><a href="#like">לייקים</a></li>
-  <li><a href="#qrcoder">QR Code</a></li>
-  <li><a href="#spa">Q&A</a></li>
-  <li><a href="#contact">צור קשר</a></li>
+    <div class="nav-links">
+      <ul>
+      <li><a href="#about">אודות</a></li>
+      <li><a href="#photos">תמונות</a></li>
+      <li><a href="#playlist">פלייליסט</a></li>
+      <li><a href="#like">לייקים</a></li>
+      <li><a href="#qrcoder">QR Code</a></li>
+      <li><a href="#spa">Q&A</a></li>
+      <li><a href="#contact">צור קשר</a></li>
+      </ul>
+
+    </div>
   </div>
 
 <section id="header" class="section">
   <p>
+    <h1> 
     ברוכים הבאים לאתר הזיכרון לעליזה סתרי ז"ל
+    </h1>
   </p>
 </section>
 		  
 <section id="about" class="section">
+
 <br/>
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-אודות
+<h2>
+  אודות
+</h2>
 <p>
 סבתי, עליזה סתרי נולדה בתאריך 13.5.1940 
 ב<a href="https://he.wikipedia.org/wiki/%D7%9B%D7%A8%D7%9E%D7%90%D7%A0%D7%A9%D7%90%D7%94">כרמאנשאה</a>,
@@ -73,11 +72,13 @@
 
 <section id="photos" class="section">
 <br/>
-תמונות
+<h2>
+  תמונות
+</h2>
 <br/>
   <div class="sliders">
     <div class="slide">
-      <img src="img\img1.jpg">
+      <img src="img\img1.jpg" class="active">
     </div>
     <div class="slide">
       <img src="img\img2.jpg" alt="">
@@ -155,72 +156,66 @@
     </div>
 
     <div class="dots">
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-      <span class="dot" onclick="currentSlide(3)"></span>
-      <span class="dot" onclick="currentSlide(4)"></span>
-      <span class="dot" onclick="currentSlide(5)"></span>
-      <span class="dot" onclick="currentSlide(6)"></span>
-      <span class="dot" onclick="currentSlide(7)"></span>
-      <span class="dot" onclick="currentSlide(8)"></span>
-      <span class="dot" onclick="currentSlide(9)"></span>
-      <span class="dot" onclick="currentSlide(10)"></span>
-      <span class="dot" onclick="currentSlide(11)"></span>
-      <span class="dot" onclick="currentSlide(12)"></span>
-      <span class="dot" onclick="currentSlide(13)"></span>
-      <span class="dot" onclick="currentSlide(14)"></span>
-      <span class="dot" onclick="currentSlide(15)"></span>
-      <span class="dot" onclick="currentSlide(16)"></span>
-      <span class="dot" onclick="currentSlide(17)"></span>
-      <span class="dot" onclick="currentSlide(18)"></span>
-      <span class="dot" onclick="currentSlide(19)"></span>
-      <span class="dot" onclick="currentSlide(20)"></span>
-      <span class="dot" onclick="currentSlide(21)"></span>
-      <span class="dot" onclick="currentSlide(22)"></span>
-      <span class="dot" onclick="currentSlide(23)"></span>
-      <span class="dot" onclick="currentSlide(24)"></span>
+      <span class="dot" onclick="curSlide(1)"></span>
+      <span class="dot" onclick="curSlide(2)"></span>
+      <span class="dot" onclick="curSlide(3)"></span>
+      <span class="dot" onclick="curSlide(4)"></span>
+      <span class="dot" onclick="curSlide(5)"></span>
+      <span class="dot" onclick="curSlide(6)"></span>
+      <span class="dot" onclick="curSlide(7)"></span>
+      <span class="dot" onclick="curSlide(8)"></span>
+      <span class="dot" onclick="curSlide(9)"></span>
+      <span class="dot" onclick="curSlide(10)"></span>
+      <span class="dot" onclick="curSlide(11)"></span>
+      <span class="dot" onclick="curSlide(12)"></span>
+      <span class="dot" onclick="curSlide(13)"></span>
+      <span class="dot" onclick="curSlide(14)"></span>
+      <span class="dot" onclick="curSlide(15)"></span>
+      <span class="dot" onclick="curSlide(16)"></span>
+      <span class="dot" onclick="curSlide(17)"></span>
+      <span class="dot" onclick="curSlide(18)"></span>
+      <span class="dot" onclick="curSlide(19)"></span>
+      <span class="dot" onclick="curSlide(20)"></span>
+      <span class="dot" onclick="curSlide(21)"></span>
+      <span class="dot" onclick="curSlide(22)"></span>
+      <span class="dot" onclick="curSlide(23)"></span>
+      <span class="dot" onclick="curSlide(24)"></span>
+
+
 
     </div>
   </div>
 
   <script>
-    var imgnm=1;
-    displayImg(imgnm);
+    let slideIndex = 1;
+    showSlides(slideIndex);
 
-    function nextImg(n)
-    {
-      displayImg(imgnm += n)
+    // Next/previous controls
+    function nextImg(n) {
+      showSlides(slideIndex += n);
     }
 
-    function displayImg(n)
-    {
-      var i;
-      var image = document.getElementsByClassName("slide");
-      var dots = document.getElementsByClassName("dot");
+    // Thumbnail image controls
+    function curSlide(n) {
+      showSlides(slideIndex = n);
     }
 
-    if (n > image.length)
-    {
-      imgnm = 1;
-    }
-    if (n < 1)
-    {
-      imgnm = image.length;
-    }
-
-    for(i = 0; i < image.length; i++)
-    {
-      image[i].style.display = "none";
-    }
-
-    for(i = 0; i < dots.length; i++)
-    {
-      dots[i].className = dots[i].className.replace(" active","");
-    }
-
-    image[imgnm = 1].style.display = "block";
-    dots[imgnm = 1].style.display = " active";
-  </script>
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("slide");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      }
+    </script>
 
 <br/>
 <br/>
@@ -233,21 +228,9 @@
 <section id="playlist" class="section">
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-פלייליסט
+<h2>
+  פלייליסט
+</h2>
 <br/>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLhaghAshDEtae75h8H5mBQtElfm_7HDd8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 <br/>
@@ -257,21 +240,9 @@
 <section id="like" class="section">
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-לייקים
+<h2>
+  לייקים
+</h2>
 <br/>
 <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fweb-development-environments-2023.github.io%2Fassignment1-209405042%2F&width=450&layout&action&size&share=false&height=35&appId" width="450" height="35" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
 <br/>
@@ -281,21 +252,9 @@
 <section id="qrcoder" class="section">
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-My Code
+<h2>
+  My Code
+</h2>
 <br/>
 <img src="img\QR.png" width="200" height="200">
 <br/>
@@ -305,21 +264,9 @@ My Code
 <section id="spa" class="section">
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-תשובות
+<h2>
+  תשובות
+</h2>
 <br/>
 <ol type="1">
   <li>
@@ -423,7 +370,9 @@ My Code
 
 
 <br/>
-צור קשר
+<h2>
+  צור קשר
+</h2>
 <br/>
 <form action="https://formsubmit.co/sitri@post.bgu.ac.il" method="POST">
   <input type="hidden" name="_next" value="https://web-development-environments-2023.github.io/assignment1-209405042/">
