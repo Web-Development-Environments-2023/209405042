@@ -1,3 +1,12 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+.content
+{
+
+}
 h1
 {
 	text-align: center;
@@ -5,6 +14,8 @@ h1
 	font-size: 52px;
 	position: relative;
 	top: 60px;
+	text-shadow: 1px 3px 6px rgb(91, 85, 98);
+
 }
 
 h2
@@ -14,9 +25,14 @@ h2
 	text-align: center;
 	font-family: 'Alef', sans-serif;
 	font-size: 36px;
-
-
+		
+	display: grid;
+	grid-template-columns: 1fr max-content 1fr;
+	grid-template-rows: 27px 0;
+	grid-gap: 20px;
+	align-items: center;
 }
+
 h3
 {
 	font-family: 'Alef', sans-serif;
@@ -24,6 +40,17 @@ h3
 	margin: 0px;
 	text-shadow: 2px;
 }
+
+
+h2:after, h2:before {
+content: " ";
+display: block;
+border-bottom: 1px solid #c50000;
+border-top: 1px solid #c50000;
+height: 5px;
+background-color:#f8f8f8;
+}
+
 
 p
 {
@@ -43,34 +70,24 @@ ol
 }
 
 
-
-#menu
-{
-	position: fixed;
-	width: 100%;
-	height: 35px;
-	background: rgb(238, 183, 183);
-}
-
-.menu
-{
-	display: flex;
-	padding: 2% 6%;
-	justify-content: space-between;
-	align-items: center;
-}
-
-nav img
-{
-	width: 150px;
-}
-
 .nav-links
 {
-	flex: 1;
+
+	justify-content: space-between;
+	align-items: center;
 	text-align: center;
 	font-family: 'Alef', sans-serif;
 	font-size: 16px;
+	background: rgb(154, 71, 108);
+	border-radius: 30px;
+	overflow: hidden;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 40px;
+	position: fixed;
+	z-index: 999;
+
 }
 
 .nav-links ul li
@@ -102,8 +119,6 @@ nav img
 {
 	width: 100%;
 }
-
-
 
 
 .sliders
@@ -218,7 +233,7 @@ label{
 
 .formContainer
 {
-	margin-right: 430px;
+	margin-right: 380px;
 	text-align: center;
 	align-items: center;
 	width: 600px;
@@ -230,4 +245,37 @@ label{
 
 button{
 	font-family: 'Alef', sans-serif;
+	transition: 0.5s;
 }
+
+button:hover{
+	background-color: blue;
+}
+
+a
+{
+	transition: 0.5s;
+}
+
+a:visited
+{
+	color: black;
+}
+
+a:hover
+{
+	color: red;
+}
+
+/* @media(max-width: 700px)
+{
+	h1
+	{
+		font-size: larger;
+	}
+	h2
+	{
+		font-size: medium;
+	}
+} */
+
