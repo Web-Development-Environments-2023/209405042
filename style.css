@@ -1,20 +1,16 @@
 *
 {
 	margin: 0;
-	padding: 0;
 }
-.content
-{
 
-}
 h1
 {
 	text-align: center;
 	font-family: 'Alef', sans-serif;
-	font-size: 52px;
+	font-size: 62px;
 	position: relative;
 	top: 60px;
-	text-shadow: 1px 3px 6px rgb(91, 85, 98);
+	color: #3a5a40;
 
 }
 
@@ -25,7 +21,7 @@ h2
 	text-align: center;
 	font-family: 'Alef', sans-serif;
 	font-size: 36px;
-		
+	color: #588157;
 	display: grid;
 	grid-template-columns: 1fr max-content 1fr;
 	grid-template-rows: 27px 0;
@@ -45,10 +41,10 @@ h3
 h2:after, h2:before {
 content: " ";
 display: block;
-border-bottom: 1px solid #c50000;
-border-top: 1px solid #c50000;
-height: 5px;
-background-color:#f8f8f8;
+border-bottom: 1px solid #ccd5ae;
+border-top: 2px solid #ccd5ae;
+height: 7px;
+background-color:transparent;
 }
 
 
@@ -78,7 +74,7 @@ ol
 	text-align: center;
 	font-family: 'Alef', sans-serif;
 	font-size: 16px;
-	background: rgb(154, 71, 108);
+	background: #e9edc9;
 	border-radius: 30px;
 	overflow: hidden;
 	top: 0px;
@@ -100,7 +96,7 @@ ol
 
 .nav-links ul li a
 {
-	color: black;
+	color: #588157;
 	text-decoration: none;
 }
 
@@ -111,7 +107,7 @@ ol
 	height: 2px;
 	display: block;
 	margin: auto;
-	background: red;
+	background: #d4a373;
 	transition: 0.5s;
 }
 
@@ -127,8 +123,8 @@ ol
 	height: 450px;
 	margin: auto;
 	position: relative;
-	border: 1px solid whitesmoke;
-	box-shadow: 0 0 3px 4px rgb(53, 51, 51);
+	border: 1px solid #a3b18a;
+	box-shadow: 0 0 3px 4px #a3b18a;
 }
 
 .sliders .slide{
@@ -165,12 +161,15 @@ ol
 } 
 
 .sliders .navbut .next:hover{
-	background-color: wheat;
-	opacity: 80%;
+	background-color: #ccd5ae;
+	opacity: 70%;
+	color: #3a5a40;
 }
 .sliders .navbut .prev:hover{
-	background-color: wheat;
+	background-color: #ccd5ae;
 	opacity: 80%;
+	color: #3a5a40;
+
 }
 
 
@@ -197,8 +196,8 @@ ol
 
 .dot{
 	cursor: pointer;
-	height: 11px;
-	width: 11px;
+	height: 9.5px;
+	width: 9.5px;
 	border-radius: 50%;
 	display: inline-block;
 	margin: 0 2px;
@@ -209,11 +208,11 @@ ol
 }
 
 .dot:hover{
-	background-color: rgb(193, 72, 72);
+	background-color: #d4a373;
 }
 
 .dots .active{
-	background-color: rgb(83, 82, 82);
+	background-color: #588157;
 }
 
 .fade {
@@ -238,18 +237,20 @@ label{
 	align-items: center;
 	width: 600px;
 	height: 220px;
-	background-color: bisque;
-	box-shadow: 0px 1px 20px coral;
 	border-radius: 3px;
+	z-index: 1000000;
 }
 
 button{
 	font-family: 'Alef', sans-serif;
 	transition: 0.5s;
+	background-color: #d4a373;
+	height: 20px;
+	width: 50px;
 }
 
 button:hover{
-	background-color: blue;
+	background-color: #ccd5ae;
 }
 
 a
@@ -264,18 +265,16 @@ a:visited
 
 a:hover
 {
-	color: red;
+	color: #3a5a40;
 }
 
-/* @media(max-width: 700px)
+section
 {
-	h1
-	{
-		font-size: larger;
-	}
-	h2
-	{
-		font-size: medium;
-	}
-} */
+	background-color: #f4f1de;
+}
+
+.buts
+{
+	z-index: 1000000000000;
+}
 
