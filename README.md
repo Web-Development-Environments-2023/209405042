@@ -3,18 +3,16 @@
   </header>
 
 <body>
-<p>Itai Carmel 208909416<br>Shay Sitri 209405042</p>
+<p>ID: 209405042 </p>
 
-<a href="https://web-development-environments-2023.github.io/assignment2-208909416_209405042/">Go to Hagwarts Invaders adventure!</a>.
-
-<p>Deafulat username: p< <br> Password: testuser</p>
+<a href="https://web-development-environments-2023.github.io/209405042/">Memorial Site to my Grandmother (RIP)</a>.
 
 <ul>
-  <li>Choose player: Harry, Ron or Hermaionie.</li>
-  <li>Chose scene.<br>
-  <li>Catch prizes</li>
+  <li>Used in JavaScript for image slides.</li>
+  <li>Contact form reached directly to my Email:<br>
+  <img src="img\cf.jpg" width="500" height="200"></li>
+  <li>Used in non deafult Hebrew font.</li>
 <ul\>
 
-<p><b>Enjoy!</b></p>
 
  </body>
